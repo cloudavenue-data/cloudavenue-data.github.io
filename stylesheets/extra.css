@@ -1,0 +1,4 @@
+.hidden {
+    visibility: hidden; /* Keeps it accessible but invisible */
+    font-size: 0; /* Shrinks the font size */
+}
