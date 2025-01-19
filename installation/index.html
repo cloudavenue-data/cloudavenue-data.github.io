@@ -225,6 +225,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -881,20 +883,23 @@
 <details open="open">
 <summary>STEP 1</summary>
 <h4 class="hidden" id="step-1">Step 1</h4>
-<p>Follow this link to install our GitHub app - <a href="https://github.com/apps/cloud-avenue-data-insights">https://github.com/apps/cloud-avenue-data-insights</a></p>
-<p><img align="right," alt="" height="400" src="../assets/cadi-install.jpeg"></p>
+<p>Click the following link to install our GitHub app: <a href="https://github.com/apps/cloud-avenue-data-insights">https://github.com/apps/cloud-avenue-data-insights</a></p>
+<p></p><div style="text-align: center;">
+    <img alt="" src="../assets/cadi-install.jpeg" width="800">
+</div>
 </details>
 <details>
 <summary>STEP 2</summary>
 <h4 class="hidden" id="step-2">Step 2</h4>
-<p>Choose repositories you want to get insights for. We support repos with Node.JS, Debezium, dbt, and Looker code. If you would like us to support any other technology please feel free to send a note to <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
-<p><img align="right," alt="" src="../assets/cadi-reposelection.jpeg" width="400"></p>
+<p>Select the repositories you want to gain insights for. We currently support repositories with Node.js, Debezium, dbt, and Looker codebases. If you would like us to support additional technologies, please feel free to reach out to us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
+<p></p><div style="text-align: center;">
+    <img alt="" src="../assets/cadi-reposelection.jpeg" width="400">
+</div>
 </details>
 <details>
 <summary>STEP 3</summary>
 <h4 class="hidden" id="step-3">Step 3</h4>
-<p>To configure additional features, e.g. to gain insights from platforms without GitHub repositories or enable notifications, create an account and configure them through our portal <a href="https://insights.cloudavenue.ai/">https://insights.cloudavenue.ai/</a> or via API following the instructions below. While on the GitHub app configuration page, capture your organization name and installation ID. Both details can be found in the URL - 
-<code>https://github.com/organizations/&lt;YOUR_ORG_NAME&gt;/settings/installations/&lt;INSTALLATION_ID&gt;</code></p>
+<p>To configure additional features, such as gaining insights from platforms without GitHub repositories or enabling notifications, create an account and set them up through our portal at <a href="https://insights.cloudavenue.ai/">https://insights.cloudavenue.ai/</a> or via our <a href="../api/">API</a>. </p>
 </details></div>
 
 
@@ -1022,10 +1027,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer", "search.suggest", "search.shortcut"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../scripts/custom-shortcut.js"></script>
       
         <script src="../js/open_in_new_tab.js"></script>
       

@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.cloudavenue.ai/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/api/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/installation/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/dbt/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/debezium/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/fivetran/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/lightdash/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/looker/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/integrations/nodejs/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://docs.cloudavenue.ai/notifications/slack/</loc>
-         <lastmod>2025-01-17</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
 </urlset>

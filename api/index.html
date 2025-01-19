@@ -223,6 +223,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -827,11 +829,11 @@
 
   <h1>API Reference</h1>
 
-<div><p>If you would like to use API to connect integrations or enable notifications, call our API with the required details. You can use any REST API client or refer to the instructions on the following page - <a href="https://insights.cloudavenue.ai/api/docs">https://insights.cloudavenue.ai/api/docs</a></p>
+<div><p>If you would like to use our API to connect integrations or enable notifications, send a request with the required details. You can use any REST API client or refer to the instructions provided on this page: <a href="https://insights.cloudavenue.ai/api/docs">https://insights.cloudavenue.ai/api/docs</a></p>
 <details class="warning">
-<summary>How to get YOUR_ORG_NAME and INSTALLATION_ID</summary>
-<p>Navigate to GitHub intalled apps and click configure Cloud Avenue Data Insights. You should be able to see owner and installation ID as part of the URL.
-<img alt="" src="../assets/cadi-configure.jpg"></p>
+<summary>How to retrieve &lt;AUTH_TOKEN&gt;</summary>
+<p>Upon logging into the Cloud Avenue portal, open the developer console (usually accessed by pressing <strong><code>F12</code></strong>), navigate to the <strong><code>Application</code></strong> tab, and locate your <strong><code>access_token</code></strong>.</p>
+<p><img alt="" src="../assets/mds_ui_access_token.png"></p>
 </details>
 <!-- ![](assets/cadi-api.jpeg){ align=right } -->
 
@@ -843,37 +845,37 @@
 <div class="tabbed-block">
 <p>You will need to generate Fivetran API Key - <a href="https://fivetran.com/docs/rest-api/getting-started">https://fivetran.com/docs/rest-api/getting-started</a></p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://insights.cloudavenue.ai/api/integrations/<span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-installation: &lt;INSTALLATION_ID&gt;"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-owner: &lt;YOUR_ORG_NAME&gt;"</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Authorization: Bearer &lt;AUTH_TOKEN&gt;'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
 -d<span class="w"> </span><span class="s1">'{</span>
-<span class="s1">"name": "fivetran01",</span>
-<span class="s1">"type": "Fivetran",</span>
-<span class="s1">"connection_details": {</span>
-<span class="s1">    "api_secret": "&lt;FIVETRAN_API_SECRET&gt;",</span>
-<span class="s1">    "additional_params": {</span>
-<span class="s1">    "api_key": "&lt;FIVETRAN_API_KEY&gt;"</span>
-<span class="s1">    }</span>
-<span class="s1">}</span>
+<span class="s1">      "name": "fivetran01",</span>
+<span class="s1">      "type": "Fivetran",</span>
+<span class="s1">      "connection_details": {</span>
+<span class="s1">        "api_secret": "&lt;FIVETRAN_API_SECRET&gt;",</span>
+<span class="s1">        "additional_params": {</span>
+<span class="s1">          "api_key": "&lt;FIVETRAN_API_KEY&gt;"</span>
+<span class="s1">        }</span>
+<span class="s1">      }</span>
 <span class="s1">}'</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>You will need to generate Lightdash access token - <a href="https://docs.lightdash.com/references/personal_tokens/">https://docs.lightdash.com/references/personal_tokens/</a></p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://insights.cloudavenue.ai/api/integrations/<span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-installation: &lt;INSTALLATION_ID&gt;"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-owner: &lt;YOUR_ORG_NAME&gt;"</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Authorization: Bearer &lt;AUTH_TOKEN&gt;'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
 -d<span class="w"> </span><span class="s1">'{</span>
-<span class="s1">"name": "lightdash01",</span>
-<span class="s1">"type": "Lightdash",</span>
-<span class="s1">"connection_details": {</span>
-<span class="s1">    "api_secret": "&lt;LIGHTDASH_API_SECRET&gt;",</span>
-<span class="s1">    "additional_params": {</span>
-<span class="s1">    "base_url": "https://app.lightdash.cloud/api/v1",</span>
-<span class="s1">    "project_uuid": "&lt;LIGHTDASH_PROJECT_UUID&gt;"</span>
-<span class="s1">    }</span>
-<span class="s1">}</span>
+<span class="s1">      "name": "lightdash01",</span>
+<span class="s1">      "type": "Lightdash",</span>
+<span class="s1">      "connection_details": {</span>
+<span class="s1">        "api_secret": "&lt;LIGHTDASH_API_SECRET&gt;",</span>
+<span class="s1">        "additional_params": {</span>
+<span class="s1">          "base_url": "https://app.lightdash.cloud/api/v1",</span>
+<span class="s1">          "project_uuid": "&lt;LIGHTDASH_PROJECT_UUID&gt;"</span>
+<span class="s1">        }</span>
+<span class="s1">      }</span>
 <span class="s1">}'</span>
 </code></pre></div>
 </div>
@@ -886,20 +888,19 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked id="slack" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="slack">Slack</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>You will need to generate Fivetran API Key - <a href="https://fivetran.com/docs/rest-api/getting-started">https://fivetran.com/docs/rest-api/getting-started</a></p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://insights.cloudavenue.ai/api/integrations/<span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-installation: &lt;INSTALLATION_ID&gt;"</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">"x-cadata-owner: &lt;YOUR_ORG_NAME&gt;"</span><span class="w"> </span><span class="se">\</span>
+<p>You will need to generate Slack Webhook URL - <a href="https://api.slack.com/messaging/webhooks">https://api.slack.com/messaging/webhooks</a></p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span><span class="s1">'POST'</span><span class="w"> </span><span class="se">\</span>
+<span class="s1">'https://insights.cloudavenue.ai/api/notifications/subscriptions'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Authorization: Bearer &lt;AUTH_TOKEN&gt;'</span><span class="w"> </span><span class="se">\</span>
+-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
 -d<span class="w"> </span><span class="s1">'{</span>
-<span class="s1">"name": "fivetran01",</span>
-<span class="s1">"type": "Fivetran",</span>
-<span class="s1">"connection_details": {</span>
-<span class="s1">    "api_secret": "&lt;FIVETRAN_API_SECRET&gt;",</span>
-<span class="s1">    "additional_params": {</span>
-<span class="s1">    "api_key": "&lt;FIVETRAN_API_KEY&gt;"</span>
-<span class="s1">    }</span>
-<span class="s1">}</span>
+<span class="s1">      "name": "slack01",</span>
+<span class="s1">      "webhookUrl": "https://hooks.slack.com/services/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",</span>
+<span class="s1">      "type": "slack",</span>
+<span class="s1">      "events": [</span>
+<span class="s1">        "pr_merged_with_impact"</span>
+<span class="s1">      ]</span>
 <span class="s1">}'</span>
 </code></pre></div>
 </div>
@@ -1016,10 +1017,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer", "search.suggest", "search.shortcut"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../scripts/custom-shortcut.js"></script>
       
         <script src="../js/open_in_new_tab.js"></script>
       

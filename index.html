@@ -223,6 +223,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -816,10 +818,10 @@
 <div><h1 id="modern-data-stack-insights-for-developers">Modern Data Stack Insights for Developers</h1>
 <p><div class="video-container"><iframe src="https://www.youtube.com/embed/d9T02icDOs0" style="width:65%;height:22.172vw;display:block;margin:0 auto" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="description">Description</h2>
-<p>It is an AI-powered GitHub app designed to streamline code reviews and enhance the integrity of your data flows. By automatically analyzing pull requests, the app provides real-time insights into the impact of code changes across the modern data stack, covering tools like Fivetran, dbt, Looker, and Lightdash. With built-in technical impact analysis, it highlights functional dependencies and potential downstream effects of changes, helping data teams prevent issues early in the development process.</p>
+<p>This AI-powered GitHub app streamlines code reviews and enhances the integrity of your data flows. By automatically analyzing pull requests, it provides real-time insights into the impact of code changes across the modern data stack, supporting tools like Fivetran, dbt, Looker, Lightdash, as well as Node.js codebases and Debezium configurations. With built-in technical impact analysis, the app highlights functional dependencies and potential downstream effects, enabling data teams to prevent issues early in the development process.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>After installing the app, it will take a little time to initialize before you can view insights across your data stack. If you have any questions please feel free to contact us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
+<p>After installing the app, it may take some time to initialize before you can view insights across your data stack. If you created a Cloud Avenue account, you will receive an email notification once the initialization is complete. If you have any questions, please feel free to contact us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
 </div></div>
 
 
@@ -931,10 +933,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.footer", "search.suggest", "search.shortcut"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="scripts/custom-shortcut.js"></script>
       
         <script src="js/open_in_new_tab.js"></script>
       
