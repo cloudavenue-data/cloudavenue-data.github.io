@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.cloudavenue.ai/installation/">
+        <link rel="canonical" href="https://docs.cloudavenue.ai/github-app/">
       
       
+        <link rel="prev" href="../getting-started/">
+      
+      
+        <link rel="next" href="../data-sources/">
       
       
       <link rel="icon" href="../assets/CloudAvenue-favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Installation - Cloud Avenue Data Insights</title>
+        <title>GitHub App Installation - Cloud Avenue Data Insights</title>
       
     
     
@@ -125,7 +129,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#github-app-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -160,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              GitHub App Installation
             
           </span>
         </div>
@@ -293,9 +297,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../github-app/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -482,10 +488,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../github-app/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GitHub App Installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -494,6 +520,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-your-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Your Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -850,6 +941,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -858,16 +951,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       Step 1
@@ -875,8 +958,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       Step 2
@@ -884,8 +967,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       Step 3
@@ -893,9 +976,22 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-your-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Your Installation
+    </span>
+  </a>
   
 </li>
       
@@ -914,30 +1010,53 @@
                   
 
 
-  <h1>Installation</h1>
-
-<div><h3 id="installation">Installation</h3>
+<div><h1 id="github-app-installation">GitHub App Installation</h1>
+<div class="admonition info">
+<p class="admonition-title">Enterprise Feature</p>
+<p>The GitHub App integration is available for Enterprise accounts. This feature enables automated code impact analysis, lineage tracking, and smart pull request insights across your data stack repositories.</p>
+</div>
+<p>Follow these steps to install and connect the Cloud Avenue Data Insights GitHub App to your account.</p>
 <details open="open">
-<summary>STEP 1</summary>
+<summary>STEP 1: Install the GitHub App</summary>
 <h4 class="hidden" id="step-1">Step 1</h4>
-<p>Click the following link to install our GitHub app: <a href="https://github.com/apps/cloud-avenue-data-insights">https://github.com/apps/cloud-avenue-data-insights</a></p>
+<p>Click the following link to install the Cloud Avenue Data Insights GitHub App: <a href="https://github.com/apps/cloud-avenue-data-insights">https://github.com/apps/cloud-avenue-data-insights</a></p>
 <p></p><div style="text-align: center;">
-    <img alt="" src="../assets/cadi-install.jpeg" width="800">
+    <img alt="GitHub App Installation" src="../assets/cadi-install.jpeg" width="800">
 </div>
 </details>
 <details>
-<summary>STEP 2</summary>
+<summary>STEP 2: Select Repositories</summary>
 <h4 class="hidden" id="step-2">Step 2</h4>
-<p>Select the repositories you want to gain insights for. We currently support repositories with Node.js, Debezium, dbt, and Looker codebases. If you would like us to support additional technologies, please feel free to reach out to us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
+<p>Select the repositories you want to gain insights for. Cloud Avenue Data Insights currently supports repositories containing Node.js, Debezium, dbt, and Looker codebases. </p>
+<p>If you need support for additional technologies, contact us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
 <p></p><div style="text-align: center;">
-    <img alt="" src="../assets/cadi-reposelection.jpeg" width="400">
+    <img alt="Repository Selection" src="../assets/cadi-reposelection.jpeg" width="400">
 </div>
 </details>
 <details>
-<summary>STEP 3</summary>
+<summary>STEP 3: Link to Your Cloud Avenue Account</summary>
 <h4 class="hidden" id="step-3">Step 3</h4>
-<p>To configure additional features, such as gaining insights from platforms without GitHub repositories or enabling notifications, create an account and set them up through our portal at <a href="https://insights.cloudavenue.ai/">https://insights.cloudavenue.ai/</a> or via our <a href="../api/">API</a>. </p>
-</details></div>
+<p>After installing the GitHub App, you'll be redirected to link it with your Cloud Avenue account. You have two options:</p>
+<p><strong>Option A: Connect to Existing Account</strong></p>
+<p>If you already have a Cloud Avenue account, sign in with your credentials to link the GitHub installation to your existing account.</p>
+<p><strong>Option B: Create New Account</strong></p>
+<p>If you're new to Cloud Avenue, you can create a new account during this step. The GitHub installation will be automatically linked to your newly created account.</p>
+<p>Once linked, the GitHub App installation will appear in your Cloud Avenue account settings, and you can begin receiving insights from your connected repositories.</p>
+</details>
+<h2 id="next-steps">Next Steps</h2>
+<p>After completing the installation:</p>
+<ul>
+<li>Configure <a href="../data-sources/">Data Sources</a> to connect your databases</li>
+<li>Set up <a href="../integrations/">Integrations</a> for additional platforms</li>
+<li>Enable <a href="../notifications/slack/">Notifications</a> to receive insights</li>
+<li>Use the <a href="../chat/">Chat</a> feature for interactive data analysis</li>
+</ul>
+<h2 id="managing-your-installation">Managing Your Installation</h2>
+<p>You can manage your GitHub App installation at any time:</p>
+<ul>
+<li><strong>GitHub Settings</strong>: Visit <a href="https://github.com/settings/installations">https://github.com/settings/installations</a> to modify repository access or uninstall</li>
+<li><strong>Cloud Avenue Portal</strong>: Access <a href="https://insights.cloudavenue.ai/">https://insights.cloudavenue.ai/</a> to view connected installations and configure features</li>
+</ul></div>
 
 
 
@@ -969,6 +1088,46 @@
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Getting Started
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../data-sources/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Sources">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data Sources
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

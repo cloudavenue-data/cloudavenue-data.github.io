@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.cloudavenue.ai/installation/">
+        <link rel="canonical" href="https://docs.cloudavenue.ai/data-sources/">
       
       
+        <link rel="prev" href="../github-app/">
+      
+      
+        <link rel="next" href="../chat/">
       
       
       <link rel="icon" href="../assets/CloudAvenue-favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Installation - Cloud Avenue Data Insights</title>
+        <title>Data Sources - Cloud Avenue Data Insights</title>
       
     
     
@@ -125,7 +129,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#data-sources" class="md-skip">
           Skip to content
         </a>
       
@@ -160,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Data Sources
             
           </span>
         </div>
@@ -310,9 +314,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../data-sources/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -502,10 +508,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../data-sources/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Sources
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -514,6 +540,266 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Data Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Data Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessing-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Data Sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Data Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-a-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editing a Data Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting a Data Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database-Specific Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database-Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-mariadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      MySQL / MariaDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snowflake
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      BigQuery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-outbound-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Outbound IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encrypted-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encrypted Credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Security
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-data-sources-in-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Data Sources in Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-test-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Test Fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slow-query-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow Query Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Timeout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -850,6 +1136,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -858,37 +1146,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Data Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Data Sources">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
+  <a href="#accessing-data-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1
+      Accessing Data Sources
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#adding-a-data-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2
+      Adding a Data Source
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
+  <a href="#editing-a-data-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3
+      Editing a Data Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting a Data Source
     </span>
   </a>
   
@@ -896,6 +1211,177 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database-Specific Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database-Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql-mariadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      MySQL / MariaDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snowflake
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      BigQuery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-outbound-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Outbound IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encrypted-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encrypted Credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Security
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-data-sources-in-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Data Sources in Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-test-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Test Fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slow-query-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow Query Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Timeout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support
+    </span>
+  </a>
   
 </li>
       
@@ -914,30 +1400,241 @@
                   
 
 
-  <h1>Installation</h1>
-
-<div><h3 id="installation">Installation</h3>
-<details open="open">
-<summary>STEP 1</summary>
-<h4 class="hidden" id="step-1">Step 1</h4>
-<p>Click the following link to install our GitHub app: <a href="https://github.com/apps/cloud-avenue-data-insights">https://github.com/apps/cloud-avenue-data-insights</a></p>
-<p></p><div style="text-align: center;">
-    <img alt="" src="../assets/cadi-install.jpeg" width="800">
+<div><h1 id="data-sources">Data Sources</h1>
+<p>Cloud Avenue Data Insights allows you to connect to your SQL databases and data warehouses to enable interactive data analysis through the Chat feature. Data sources are securely stored and can be reused across multiple chat sessions.</p>
+<h2 id="overview">Overview</h2>
+<p>Data sources enable you to:</p>
+<ul>
+<li><strong>Query Your Data</strong>: Run SQL queries and get insights from your databases through natural language</li>
+<li><strong>Generate Charts</strong>: Create visualizations based on your data</li>
+<li><strong>Build Data Tables</strong>: Execute queries and view results in interactive tables</li>
+<li><strong>Refresh Artifacts</strong>: Update saved charts and tables with the latest data</li>
+</ul>
+<h2 id="supported-databases">Supported Databases</h2>
+<p>Cloud Avenue Data Insights supports the following database platforms:</p>
+<ul>
+<li><strong>PostgreSQL</strong>: Industry-standard open-source relational database</li>
+<li><strong>MySQL</strong>: Popular open-source relational database</li>
+<li><strong>MariaDB</strong>: MySQL-compatible open-source database</li>
+<li><strong>Microsoft SQL Server</strong>: Enterprise relational database management system</li>
+<li><strong>Snowflake</strong>: Cloud data warehouse platform</li>
+<li><strong>BigQuery</strong>: Google Cloud's fully-managed data warehouse</li>
+</ul>
+<h2 id="managing-data-sources">Managing Data Sources</h2>
+<h3 id="accessing-data-sources">Accessing Data Sources</h3>
+<p>To manage your data sources:</p>
+<ol>
+<li>Sign in to the <a href="https://insights.cloudavenue.ai/">Cloud Avenue Portal</a></li>
+<li>Navigate to <strong>Settings</strong> → <strong>Data Sources</strong></li>
+<li>You'll see a list of all configured data sources</li>
+</ol>
+<h3 id="adding-a-data-source">Adding a Data Source</h3>
+<p>To connect a new database:</p>
+<ol>
+<li>Click the <strong>"Add Source"</strong> button</li>
+<li>
+<p>Fill in the connection details:</p>
+<ul>
+<li><strong>Name</strong>: A descriptive name for this connection (e.g., "Production Analytics DB")</li>
+<li><strong>Dialect</strong>: Select your database type from the dropdown</li>
+<li><strong>Host</strong>: Database server hostname or IP address</li>
+<li><strong>Port</strong>: Database server port (default varies by database type)</li>
+<li><strong>Database</strong>: Name of the database/schema to connect to</li>
+<li><strong>Username</strong>: Database username</li>
+<li><strong>Password</strong>: Database password (securely encrypted)</li>
+<li><strong>Options</strong> (Optional): Additional connection parameters in JSON format</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>"Test Connection"</strong> to verify the configuration</p>
+</li>
+<li>If the test succeeds, click <strong>"Save"</strong> to add the data source</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Connection Security</p>
+<p>All connections originate from Cloud Avenue's static outbound IP address. You can whitelist this IP in your database firewall for secure access. The static IP is displayed in the connection security information section when adding or editing a source.</p>
 </div>
-</details>
-<details>
-<summary>STEP 2</summary>
-<h4 class="hidden" id="step-2">Step 2</h4>
-<p>Select the repositories you want to gain insights for. We currently support repositories with Node.js, Debezium, dbt, and Looker codebases. If you would like us to support additional technologies, please feel free to reach out to us at <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a></p>
-<p></p><div style="text-align: center;">
-    <img alt="" src="../assets/cadi-reposelection.jpeg" width="400">
+<h3 id="editing-a-data-source">Editing a Data Source</h3>
+<p>To modify an existing data source:</p>
+<ol>
+<li>Click the edit icon next to the data source name</li>
+<li>Update the connection details as needed</li>
+<li>Test the connection to ensure it still works</li>
+<li>Click <strong>"Save"</strong> to apply changes</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Demo Data Source</p>
+<p>The demo data source (e.g., "[Demo] Jaffle Shop") is provided for testing and cannot be edited. However, you can delete it if you no longer need it.</p>
 </div>
-</details>
-<details>
-<summary>STEP 3</summary>
-<h4 class="hidden" id="step-3">Step 3</h4>
-<p>To configure additional features, such as gaining insights from platforms without GitHub repositories or enabling notifications, create an account and set them up through our portal at <a href="https://insights.cloudavenue.ai/">https://insights.cloudavenue.ai/</a> or via our <a href="../api/">API</a>. </p>
-</details></div>
+<h3 id="deleting-a-data-source">Deleting a Data Source</h3>
+<p>To remove a data source:</p>
+<ol>
+<li>Click the delete icon next to the data source name</li>
+<li>Confirm the deletion when prompted</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Deletion Impact</p>
+<p>Deleting a data source will not affect previously generated artifacts, but you won't be able to refresh them or create new queries against this connection.</p>
+</div>
+<h2 id="database-specific-configuration">Database-Specific Configuration</h2>
+<p>Each database type requires specific connection parameters. The UI form will guide you through the required fields based on your selected database dialect.</p>
+<h3 id="postgresql">PostgreSQL</h3>
+<p><strong>Required Fields:</strong></p>
+<ul>
+<li><strong>Host</strong>: Database server hostname or IP address (e.g., <code>db.example.com</code>)</li>
+<li><strong>Port</strong>: Database port (default: <code>5432</code>)</li>
+<li><strong>Database</strong>: Database name to connect to</li>
+<li><strong>Username</strong>: Database user account</li>
+<li><strong>Password</strong>: User password (encrypted at rest)</li>
+</ul>
+<p><strong>Optional Parameters</strong> (via Options field):</p>
+<ul>
+<li><code>connect_timeout</code>: Connection timeout in seconds</li>
+<li><code>sslmode</code>: SSL mode (<code>disable</code>, <code>require</code>, <code>verify-ca</code>, <code>verify-full</code>)</li>
+<li><code>application_name</code>: Application name for connection tracking</li>
+</ul>
+<h3 id="mysql-mariadb">MySQL / MariaDB</h3>
+<p><strong>Required Fields:</strong></p>
+<ul>
+<li><strong>Host</strong>: Database server hostname or IP address</li>
+<li><strong>Port</strong>: Database port (default: <code>3306</code> for MySQL, <code>3306</code> for MariaDB)</li>
+<li><strong>Database</strong>: Database name to connect to</li>
+<li><strong>Username</strong>: Database user account</li>
+<li><strong>Password</strong>: User password (encrypted at rest)</li>
+</ul>
+<p><strong>Optional Parameters</strong> (via Options field):</p>
+<ul>
+<li><code>connect_timeout</code>: Connection timeout in seconds</li>
+<li><code>charset</code>: Character set (e.g., <code>utf8mb4</code>)</li>
+<li><code>ssl_ca</code>: Path to SSL certificate authority file</li>
+</ul>
+<h3 id="microsoft-sql-server">Microsoft SQL Server</h3>
+<p><strong>Required Fields:</strong></p>
+<ul>
+<li><strong>Host</strong>: SQL Server hostname or IP address</li>
+<li><strong>Port</strong>: Server port (default: <code>1433</code>)</li>
+<li><strong>Database</strong>: Database name to connect to</li>
+<li><strong>Username</strong>: SQL Server login username</li>
+<li><strong>Password</strong>: Login password (encrypted at rest)</li>
+</ul>
+<p><strong>Optional Parameters</strong> (via Options field):</p>
+<ul>
+<li><code>driver</code>: ODBC driver name (default: auto-detected)</li>
+<li><code>encrypt</code>: Whether to encrypt the connection (<code>yes</code> or <code>no</code>)</li>
+<li><code>TrustServerCertificate</code>: Trust server certificate (<code>yes</code> or <code>no</code>)</li>
+</ul>
+<h3 id="snowflake">Snowflake</h3>
+<p><strong>Required Fields:</strong></p>
+<ul>
+<li><strong>Host</strong>: Snowflake account identifier (e.g., <code>myorg-account123</code>)</li>
+<li><strong>Database</strong>: Database name</li>
+<li><strong>Username</strong>: Snowflake username</li>
+<li><strong>Password</strong>: User password (encrypted at rest)</li>
+</ul>
+<p><strong>Additional Required Parameters</strong> (via Options field in JSON format):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"warehouse"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your_warehouse_name"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"schema"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your_schema_name"</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Optional Parameters</strong> (via Options field):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your_role_name"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"arraysize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>warehouse</code>: Virtual warehouse to use for queries</li>
+<li><code>schema</code>: Default schema within the database</li>
+<li><code>role</code>: Role to use for the session</li>
+<li><code>arraysize</code>: Number of rows to fetch per batch</li>
+</ul>
+<h3 id="bigquery">BigQuery</h3>
+<p><strong>Required Fields:</strong></p>
+<ul>
+<li><strong>Host</strong>: Your GCP project ID (e.g., <code>my-gcp-project</code>)</li>
+<li><strong>Database</strong>: BigQuery dataset name</li>
+<li><strong>Password</strong>: Service account JSON credentials (paste the entire JSON content)</li>
+</ul>
+<p>The service account must have appropriate permissions:</p>
+<ul>
+<li><code>bigquery.jobs.create</code>: To run queries</li>
+<li><code>bigquery.tables.getData</code>: To read table data</li>
+<li><code>bigquery.datasets.get</code>: To access dataset metadata</li>
+</ul>
+<p><strong>Optional Parameters</strong> (via Options field in JSON format):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"US"</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>location</code>: Geographic location for query processing (e.g., <code>US</code>, <code>EU</code>, <code>asia-northeast1</code>)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">BigQuery Credentials</p>
+<p>The Password field should contain the entire service account JSON file content. The credentials are encrypted before storage and never exposed in responses.</p>
+</div>
+<h2 id="connection-security">Connection Security</h2>
+<h3 id="static-outbound-ip">Static Outbound IP</h3>
+<p>All database connections from Cloud Avenue originate from a single static IP address. This allows you to configure your database firewall to accept connections only from this trusted IP.</p>
+<p>The static outbound IP is displayed when adding or editing a data source. You can copy this IP and add it to your database's allowlist.</p>
+<h3 id="encrypted-credentials">Encrypted Credentials</h3>
+<p>All sensitive information, including passwords and credentials, is encrypted at rest using industry-standard encryption. Credentials are never exposed in API responses or logs.</p>
+<h3 id="network-security">Network Security</h3>
+<p>For enhanced security, Cloud Avenue supports:</p>
+<ul>
+<li>SSL/TLS encrypted connections to your databases</li>
+<li>VPN tunnels for private network access (contact <a href="mailto:hello@cloudavenue.ai">hello@cloudavenue.ai</a> for advanced options)</li>
+<li>IP whitelisting for restricted access</li>
+</ul>
+<h2 id="using-data-sources-in-chat">Using Data Sources in Chat</h2>
+<p>Once you've configured a data source, you can use it in the Chat feature:</p>
+<ol>
+<li>Start or open a chat session</li>
+<li>Click the data source selector in the title bar</li>
+<li>Choose the database you want to query</li>
+<li>Ask questions or request analyses in natural language</li>
+</ol>
+<p>The AI will generate SQL queries, execute them against your selected data source, and present results as tables, charts, or insights.</p>
+<p>For more information on using data sources in chat, see the <a href="../chat/">Chat documentation</a>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="connection-test-fails">Connection Test Fails</h3>
+<p>If the connection test fails:</p>
+<ol>
+<li><strong>Verify credentials</strong>: Double-check username, password, and database name</li>
+<li><strong>Check network access</strong>: Ensure your database accepts connections from Cloud Avenue's static IP</li>
+<li><strong>Confirm port accessibility</strong>: Verify the database port is open and accessible</li>
+<li><strong>Review firewall rules</strong>: Check that no firewall is blocking the connection</li>
+<li><strong>Test locally</strong>: Try connecting to the database from another client to isolate the issue</li>
+</ol>
+<h3 id="slow-query-performance">Slow Query Performance</h3>
+<p>If queries are running slowly:</p>
+<ol>
+<li><strong>Optimize indexes</strong>: Ensure your database has appropriate indexes</li>
+<li><strong>Reduce data volume</strong>: Consider filtering or aggregating data</li>
+<li><strong>Check database load</strong>: Verify your database server has sufficient resources</li>
+<li><strong>Review query complexity</strong>: Simplify complex queries when possible</li>
+</ol>
+<h3 id="connection-timeout">Connection Timeout</h3>
+<p>If connections are timing out:</p>
+<ol>
+<li><strong>Check network latency</strong>: High latency can cause timeouts</li>
+<li><strong>Increase timeout settings</strong>: Contact support for timeout adjustments</li>
+<li><strong>Verify database availability</strong>: Ensure the database server is running and responsive</li>
+</ol>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Use read-only accounts</strong>: Create database users with read-only permissions for Cloud Avenue</li>
+<li><strong>Descriptive naming</strong>: Use clear, descriptive names for your data sources</li>
+<li><strong>Test connections regularly</strong>: Periodically verify that saved connections still work</li>
+<li><strong>Secure credentials</strong>: Never share database credentials in chat or documentation</li>
+<li><strong>Monitor usage</strong>: Keep track of query patterns and performance</li>
+</ol>
+<h2 id="support">Support</h2>
+<p>For assistance with data sources:</p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:support@cloudavenue.ai">support@cloudavenue.ai</a></li>
+</ul></div>
 
 
 
@@ -969,6 +1666,46 @@
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../github-app/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitHub App Installation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                GitHub App Installation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chat/" class="md-footer__link md-footer__link--next" aria-label="Next: Chat">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chat
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
