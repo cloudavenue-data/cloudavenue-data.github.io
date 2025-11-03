@@ -1058,7 +1058,7 @@
 <h3 id="creating-an-api-key">Creating an API Key</h3>
 <p>To create a long-lived API key for accessing the Cloud Avenue API:</p>
 <ol>
-<li>Sign in to the <a href="https://app.cloudavenue.ai//">Cloud Avenue Portal</a></li>
+<li>Sign in to the <a href="https://app.cloudavenue.ai/">Cloud Avenue Portal</a></li>
 <li>Click on your profile avatar in the top-right corner</li>
 <li>Select <strong>"Manage API Keys"</strong> from the dropdown menu</li>
 <li>Click the <strong>"Add New Key"</strong> button</li>
@@ -1100,7 +1100,7 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>You will need to generate Fivetran API Key - <a href="https://fivetran.com/docs/rest-api/getting-started">https://fivetran.com/docs/rest-api/getting-started</a></p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.cloudavenue.ai//api/integrations/<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.cloudavenue.ai/api/integrations/<span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'X-API-KEY: &lt;YOUR_API_KEY&gt;'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
@@ -1118,7 +1118,7 @@
 </div>
 <div class="tabbed-block">
 <p>You will need to generate Lightdash access token - <a href="https://docs.lightdash.com/references/personal_tokens/">https://docs.lightdash.com/references/personal_tokens/</a></p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.cloudavenue.ai//api/integrations/<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.cloudavenue.ai/api/integrations/<span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'X-API-KEY: &lt;YOUR_API_KEY&gt;'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
@@ -1146,7 +1146,7 @@
 <div class="tabbed-block">
 <p>You will need to generate Slack Webhook URL - <a href="https://api.slack.com/messaging/webhooks">https://api.slack.com/messaging/webhooks</a></p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span><span class="s1">'POST'</span><span class="w"> </span><span class="se">\</span>
-<span class="s1">'https://app.cloudavenue.ai//api/notifications/subscriptions'</span><span class="w"> </span><span class="se">\</span>
+<span class="s1">'https://app.cloudavenue.ai/api/notifications/subscriptions'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'accept: application/json'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'X-API-KEY: &lt;YOUR_API_KEY&gt;'</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
